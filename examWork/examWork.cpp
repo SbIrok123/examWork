@@ -217,7 +217,7 @@ int main()
                 cout << "|1.Find by name            |\n";
                 cout << "|2.Find by literature type |\n";
                 cout << "|3.Find by Author          |\n";
-                cout << "|4.Find by release year    |\n";
+                cout << "|4.Find by adding month    |\n";
                 cout << "|--------------------------|\n";
                 cout << "|0.Back to main menu       |\n";
                 cout << "----------------------------\n";
@@ -270,11 +270,11 @@ int main()
                     break;
                 case 4:
                     int findYear;
-                    cout << "Enter find year - ";
+                    cout << "Enter find month - ";
                     cin >> findYear;
                     for (int i = 0; i < NBooks; i++)
                     {
-                        if (findYear == books[i].existed.year)
+                        if (findYear == books[i].added.month)
                         {
                             books[i].showBook();
                         }
