@@ -256,12 +256,12 @@ int main()
                     break;
                 case 3 :
                     char findAuthor[50];
-                    cout << "Enter find type - ";
+                    cout << "Enter authors name and surname - ";
                     cin.ignore();
                     cin.getline(findAuthor, 50);
                     for (int i = 0; i < NBooks; i++)
                     {
-                        if (strcmp(findAuthor, books[i].type) == 0)
+                        if (strcmp(findAuthor, books[i].author) == 0)
                         {
                             books[i].showBook();
                         }
