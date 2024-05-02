@@ -295,6 +295,7 @@ int main()
         }
     
     } while (menu != 0);
+
     
     fopen_s(&fp, "books.txt", "wb"); //Сохраняем данные
     if (fp != NULL) {
