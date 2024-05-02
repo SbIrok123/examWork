@@ -5,7 +5,7 @@ int main()
     FILE* fp = nullptr;
     Book* books=new Book[1];
     
-    fopen_s(&fp, "books.txt", "r");
+    fopen_s(&fp, "books.txt", "r"); //заповнення масиву 
     if (fp != NULL) 
     {    
         fread(&NBooks, sizeof(int), 1, fp);
@@ -269,12 +269,12 @@ int main()
                     cout << endl << endl;
                     break;
                 case 4:
-                    int findYear;
+                    int findMonth;
                     cout << "Enter find month - ";
-                    cin >> findYear;
+                    cin >> findMonth;
                     for (int i = 0; i < NBooks; i++)
                     {
-                        if (findYear == books[i].added.month)
+                        if (findMonth == books[i].added.month)
                         {
                             books[i].showBook();
                         }
